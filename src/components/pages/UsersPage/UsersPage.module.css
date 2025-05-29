@@ -1,0 +1,53 @@
+.usersList {
+  display: block;
+
+  .form {
+    position: sticky;
+    top: 118px;
+    background-color: #242424;
+    padding: 1rem 0;
+
+    .formItem {
+      /* color: crimson; */
+      margin: 0 1rem;
+      padding: 0.5rem;
+    }
+
+    optgroup {
+      color: crimson;
+
+      option {
+        color: rgba(255, 255, 255, 0.87);
+      }
+    }
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0 3rem;
+    text-align: left;
+    display: grid;
+    gap: 1rem;
+
+    /* .user {
+      display: grid;
+      grid-template-columns: 100px 1fr;
+      gap: 1rem;
+
+      .userAvatar {
+        width: 100px;
+        height: 100px;
+        object-fit: cover;
+        object-position: center;
+      }
+
+      .userName {
+        color: #fff;
+      }
+
+      .userPosition {
+        color: #9f9f9f;
+      }
+    } */
+  }
+}

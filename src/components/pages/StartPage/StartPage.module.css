@@ -1,0 +1,8 @@
+.startPage {
+  display: flex;
+  flex-direction: column;
+}
+
+.btnStart {
+  align-self: center;
+}

@@ -1,0 +1,45 @@
+.user {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+  gap: 1rem;
+  border: 1px solid transparent;
+  border-radius: 3px;
+
+  &:hover {
+    cursor: pointer;
+    color: crimson;
+    /* color: rgba(255, 255, 255, 0.87); */
+
+    background-color: #1a1a1a;
+    /* border-color: crimson; */
+    /* filter: drop-shadow(0 0 0.5rem crimson); */
+
+    transition: 0.25s;
+
+    .userName {
+      color: inherit;
+    }
+
+    .userPosition {
+      color: #9f9f9f;
+    }
+  }
+
+  .userAvatar {
+    display: block;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 3px;
+  }
+
+  .userName {
+    color: rgba(255, 255, 255, 0.87);
+    /* color: crimson; */
+  }
+
+  .userPosition {
+    color: #9f9f9f;
+  }
+}
