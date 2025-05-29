@@ -14,12 +14,6 @@ function Modal({ isModalOpen, children }) {
     }
   }, [isModalOpen]);
 
-  // return (
-  //   <dialog open={isModalOpen} className={s.modal}>
-  //     {children}
-  //   </dialog>
-  // );
-
   return createPortal(
     // <dialog ref={dialog} open={isModalOpen} className={s.modal}>
     <dialog ref={dialog} className={s.modal}>
