@@ -26,7 +26,6 @@ function UsersPage() {
           Search:
         </label>
         <input
-          autoFocus
           className={s.formItem}
           id="searchInput"
           type="text"
