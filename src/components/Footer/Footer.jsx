@@ -1,7 +1,8 @@
-import Button from "../Button/Button";
+// import Button from "../Button/Button";
+import { NavLink } from "react-router";
 
 import { styled } from "styled-components";
-// import s from "./Footer.module.css";
+import sBtn from "../Button/Button.module.css";
 
 const FooterContainer = styled.footer`
   min-height: 100px;
@@ -16,6 +17,7 @@ const DivContainer = styled.div`
   margin-right: 2rem;
 `;
 
+// function Footer({ page }) {
 function Footer({ page, setPage }) {
   function handleGoStartBtnClick() {
     setPage("home");
@@ -26,7 +28,15 @@ function Footer({ page, setPage }) {
       {page !== "home" && (
         <>
           <DivContainer>Press</DivContainer>
-          <Button onClick={handleGoStartBtnClick}>Go to start</Button>
+          <NavLink
+            to="/vite-project"
+            className={sBtn.btn}
+            onClick={handleGoStartBtnClick}
+          >
+            {/* <Button onClick={handleGoStartBtnClick}>Go to start</Button> */}
+            Go to start
+          </NavLink>
+          {/* <Button onClick={handleGoStartBtnClick}>Go to start</Button> */}
         </>
       )}
     </FooterContainer>

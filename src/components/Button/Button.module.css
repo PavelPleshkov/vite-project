@@ -1,4 +1,5 @@
 .btn {
+  color: inherit;
   border-radius: 8px;
   border: 1px solid transparent;
   padding: 0.6em 1.2em;
@@ -12,6 +13,7 @@
   filter: drop-shadow(0 0 0.5rem crimson);
 
   &:hover {
+    color: inherit;
     filter: drop-shadow(0 0 1rem crimson);
   }
 
