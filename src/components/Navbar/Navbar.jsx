@@ -1,20 +1,17 @@
 import s from "./Navbar.module.css";
 import sBtn from "../Button/Button.module.css";
-import { NavLink } from "react-router";
-
-// import Button from "../Button/Button";
+import { NavLink } from "react-router-dom";
 
 function Navbar({ setPage }) {
-  // function Navbar({ page, setPage }) {
   function handleNavBtn(page) {
     setPage(page);
   }
 
   return (
     <nav className={s.nav}>
-      {/* <Routes> */}
       <NavLink
         to="/vite-project"
+        end
         className={({ isActive }) => {
           return isActive
             ? sBtn.btn + " " + s.navBtn + " " + s.active
@@ -59,7 +56,6 @@ function Navbar({ setPage }) {
       </NavLink>
       <NavLink
         to="/vite-project/about"
-        // className={sBtn.btn + " " + s.navBtn}
         className={({ isActive }) => {
           return isActive
             ? sBtn.btn + " " + s.navBtn + " " + s.active
@@ -69,38 +65,6 @@ function Navbar({ setPage }) {
       >
         About
       </NavLink>
-      {/* </Routes> */}
-
-      {/* <Button
-        styles={page === "home" ? s.navBtn + " " + s.active : s.navBtn}
-        onClick={() => handleNavBtn("home")}
-      >
-        Home
-      </Button>
-      <Button
-        styles={page === "profile" ? s.navBtn + " " + s.active : s.navBtn}
-        onClick={() => handleNavBtn("profile")}
-      >
-        Profile
-      </Button>
-      <Button
-        styles={page === "users" ? s.navBtn + " " + s.active : s.navBtn}
-        onClick={() => handleNavBtn("users")}
-      >
-        Users
-      </Button>
-      <Button
-        styles={page === "form" ? s.navBtn + " " + s.active : s.navBtn}
-        onClick={() => handleNavBtn("form")}
-      >
-        Form
-      </Button>
-      <Button
-        styles={page === "about" ? s.navBtn + " " + s.active : s.navBtn}
-        onClick={() => handleNavBtn("about")}
-      >
-        About
-      </Button> */}
     </nav>
   );
 }
