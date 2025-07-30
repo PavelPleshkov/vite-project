@@ -1,4 +1,11 @@
-Deploy: visit [project](https://pavelpleshkov.github.io/vite-project/)
+💻 Run app by
+`npm run dev`
+in terminal
+or
+
+🌐 Deploy: visit [project](https://pavelpleshkov.github.io/vite-project/)
+
+---
 
 # React + Vite
 
