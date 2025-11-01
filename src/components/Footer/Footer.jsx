@@ -13,7 +13,7 @@ const FooterContainer = styled.footer`
   justify-content: flex-start;
 `;
 
-const DivContainer = styled.div`
+const DescriptionContainer = styled.div`
   margin-right: 2rem;
 `;
 
@@ -27,7 +27,7 @@ function Footer({ page, setPage }) {
     <FooterContainer>
       {page !== "home" && (
         <>
-          <DivContainer>Press</DivContainer>
+          <DescriptionContainer>Press</DescriptionContainer>
           <NavLink
             to="/vite-project"
             className={sBtn.btn}
